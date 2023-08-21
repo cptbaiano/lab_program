@@ -49,26 +49,45 @@ def q09():
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
-
+def q10():
+    num1 = float(input(f'Digite seu primeiro número: '))
+    num2 = float(input(f'Digite seu segundo número: '))
+    num3 = float(input(f'Digite seu terceiro número: '))
+    print(f'O resultado da média aritmética foi: {num1+num2+num3/3}')
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def q11():
+    print('Olá caro usuário, nesta aplicação iremos fazer as operações de adição, subtração, multiplicação e divisão com os números escolhidos por você !!!')
+    num1 = float(input(f'\nDigite o primeiro número: '))
+    num2 = float(input(f'\nDigite o segundo número: '))
+    print(f'\nValor da soma: {num1+num2}\nValor da subtração: {num1-num2}\nValor da multiplicação: {num1*num2}\nValor da divisão: {num1/num2}')
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
-
+def q12():
+    num1 = int(input(f'Escreva um número: '))
+    print(f'O valor do número escolhido ao quadrado é: {num1*num1}')
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
-
+def q13():
+    saldo = float(input(f'Informe seu saldo: '))
+    print(f'O valor seu saldo com o reajuste de 2% é: {saldo*1.02}')
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base + altura) e a área (base * altura).
-
+def q14():
+    num1 = float(input('Insira o valor da base do seu objeto: '))
+    num2 = float(input('Insira o valor da altura do seu objeto: '))
+    print(f'O valor do perímetro é de {num1+num2} e o valor da área é de {num1*num2}')
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
-
+def q15():
+    num1 = float(input('Insira o valor do produto: '))
+    num2 = float(input('Insira a porcentagem do desconto desejado: '))
+    print(f'O valor do desconto foi de:{num2} e o valor final com o desconto aplicado foi de: {num1*num2/100}')
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
@@ -104,4 +123,4 @@ def q09():
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
 
-q08()
+q15()
