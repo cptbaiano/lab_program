@@ -60,17 +60,36 @@ def q02():
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
 def q03():
     num1 = int(input('Insira o primeiro valor: '))
-    result = num1%++0
-    if result
+    if num1%3==0:
+        print('O valor digitado é múltiplo de 3')
+    else:
+        print('O valor digitado não é múltipo de 3')
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-
+def q04():
+    num1 = float(input(f'Insira o valor desejado: '))
+    if num1%5 == 0:
+        print('O valor digitado é divisível por 5 ')
+    else:
+        print('O valor digitado não é divisível por 5')
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def q04():
+    num1 = float(input(f'Insira o valor desejado: '))
+    if (num1%3 == 0) and (num1%7 ==0):
+        print('O valor digitado é divisível por 3 e por 7')
+
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+def q04():
+    num1 = float(input('Informe o valor do salário bruto: '))
+    prest = float(input('Informe o valor da prestação: '))
+    if prest > num1*0.3:
+        print('O empréstimo não pode ser concedido!!!')
+    else:
+        print('O empréstimo pode ser concedido!!!')
 
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
@@ -196,4 +215,4 @@ def q03():
 #0,5 1º, 2º e 3º grupos
 
 
-q02()
+q04()
