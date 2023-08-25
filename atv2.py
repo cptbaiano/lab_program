@@ -73,7 +73,7 @@ def q04():
     else:
         print('O valor digitado não é divisível por 5')
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
-def q04():
+def q05():
     num1 = float(input(f'Insira o valor desejado: '))
     if (num1%3 == 0) and (num1%7 ==0):
         print('O valor digitado é divisível por 3 e por 7')
@@ -83,7 +83,7 @@ def q04():
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
-def q04():
+def q06():
     num1 = float(input('Informe o valor do salário bruto: '))
     prest = float(input('Informe o valor da prestação: '))
     if prest > num1*0.3:
@@ -93,16 +93,41 @@ def q04():
 
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
+def q07():
+    num1 = float(input('Digite o número desejado: '))
+    if (num1 >= 20) and (num1<= 50):
+        print(f'O número {num1} está entre 20 e 50')
+    else:
+        print(f'O número {num1} não está entre 20 e 50')
 
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
+def q08():
+    num1 = float(input('Digite o número desejado: '))
+    if (num1 > 20):
+        print('Maior que 20')
+    elif num1 == 20:
+        print('Igual a 20')
+    elif  num1 < 20:
+        print('Maior do que 20')
 
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
+def q09():
+    data1 = int(input('Escreva o ano do seu nascimento: '))
+    data2 = int(input('Escreva o ano atual: '))
+    print(f'Você tem {data2 - data1} de idade')
+
 
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
+def q10():
+    num1 = float(input('Digite o primeiro valor desejado: '))
+    num2 = float(input('Digite o segundo valor desejado: '))
+    num3 = float(input('Digite o terceiro valor desejado: '))
+    if (num1> num2 and num3 )
+
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 
@@ -215,4 +240,4 @@ def q04():
 #0,5 1º, 2º e 3º grupos
 
 
-q04()
+q09()
