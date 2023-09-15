@@ -21,33 +21,43 @@ def q03():
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
 def q04():
-    nome = str(input('Insira seu nome: '))
-    idade = int(input('Insira sua idade'))
-    print('Se seu sexo for masculino, insira M')
-    print('Se seu sexo for feminino, insira F')
-    sexo = str(input('Insira:'))
-    if (sexo) != (M) or (F):
-        print
+    c = 0
+    while c <= 20:
+        nome = input('Insira seu nome: ')
+        idade = int(input('Insira sua idade: '))
+        print('Se seu sexo for masculino, insira M\t Se seu sexo for feminino, insira F')
+        sexo = input('Insira:')
+        if sexo == 'M' and idade > 21 :
+            print(f'Nome: {nome}\tidade: {idade}\tsexo: {sexo}\n')
+        c += 1 # c = c + 1
+        
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
-def questao05():
-    pass
+def q05():
+    num1 = int(input('Insira o primeiro valor desejado: '))
+    num2 = int(input('Insira o segundo valor desejado: '))
+    if num1 > 0 and num2 > 0 : 
+        print(f'O valor da soma foi de: {num1+ num2}')
+    else: print('O valor digitado não é válido!!!')
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
-def questao06():
-    pass
-
+def q06():
+    n = 0
+    while n < (20):
+        ant = 0
+        atu = 1
+        print(atu+)
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
-def questao07():
+def q07():
     pass
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
@@ -57,7 +67,7 @@ def questao07():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
-def questao08():
+def q08():
     pass
 
 #9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
@@ -69,7 +79,7 @@ def questao08():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
-def questao09():
+def q09():
     pass
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
@@ -80,20 +90,20 @@ def questao09():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
-def questao10():
+def q10():
     pass
     
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
-def questao11():
+def q11():
     pass
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
-def questao12():
+def q12():
     pass
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
@@ -299,4 +309,4 @@ def questao16():
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
 
-q03()
+q05()
